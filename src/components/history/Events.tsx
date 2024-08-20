@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
-import { BsCalendar4Week } from "react-icons/bs";
+
 import GoogleMeetIcon from "../../assets/google-meet.svg";
 import TrashIcon from "../../assets/trash.svg";
+import CalendarIcon from "../../assets/calendar.svg";
 
 export const EventHistory = () => {
   const data = [
@@ -14,7 +15,7 @@ export const EventHistory = () => {
         <Text>Events History</Text>
 
         <Flex color="gray.500" alignItems="center" gap={1}>
-          <BsCalendar4Week style={{ fontSize: "17px" }} />
+          <Image src={CalendarIcon} alt="" />
           <Text>This Month</Text>
         </Flex>
       </Flex>

@@ -1,7 +1,7 @@
 import { Box, Flex, Text, Tabs, TabList, Tab, Image } from "@chakra-ui/react";
-import { BsCalendar4Week } from "react-icons/bs";
 import DonutChart from "react-donut-chart";
 import graphImg from "../../assets/graph.png";
+import CalendarIcon from "../../assets/calendar.svg";
 
 const NewStudents = () => {
   return (
@@ -77,7 +77,7 @@ const Enrollment = () => {
         <Text>Enrolment Insight</Text>
 
         <Flex color="gray.500" alignItems="center" gap={1}>
-          <BsCalendar4Week style={{ fontSize: "17px" }} />
+          <Image src={CalendarIcon} alt="" />
           <Text>This Month</Text>
         </Flex>
       </Flex>

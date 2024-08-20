@@ -9,9 +9,10 @@ import {
   Th,
   Td,
   TableContainer,
+  Image,
 } from "@chakra-ui/react";
 import moment from "moment";
-import { BsCalendar4Week } from "react-icons/bs";
+import CalendarIcon from "../../assets/calendar.svg";
 
 export const PurchaseHistory = () => {
   const data = [
@@ -53,7 +54,7 @@ export const PurchaseHistory = () => {
         <Text>Course Purchase History</Text>
 
         <Flex color="gray.500" alignItems="center" gap={1}>
-          <BsCalendar4Week style={{ fontSize: "17px" }} />
+          <Image src={CalendarIcon} alt="" />
           <Text>This Month</Text>
         </Flex>
       </Flex>
