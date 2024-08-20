@@ -5,7 +5,13 @@ import graphImg from "../../assets/graph.png";
 
 const NewStudents = () => {
   return (
-    <Box bg="#fff" p={{ base: 3, lg: 5, xl: 6 }} borderRadius="3xl" w="full">
+    <Box
+      bg="#fff"
+      p={{ base: 3, lg: 5, xl: 6 }}
+      height="420px"
+      borderRadius="3xl"
+      w="full"
+    >
       <Flex alignItems="center" justifyContent="space-between">
         <Text>New Students Stats</Text>
 
@@ -46,7 +52,7 @@ const NewStudents = () => {
       </Flex>
 
       <Box>
-        <Image src={graphImg} alt="" />
+        <Image src={graphImg} alt="" width="100%" height="100%" />
       </Box>
     </Box>
   );
@@ -60,7 +66,13 @@ const Enrollment = () => {
 
   const colors = ["#782ef3", "#FC8800"];
   return (
-    <Box bg="#fff" p={{ base: 3, lg: 5, xl: 6 }} borderRadius="3xl" w="full">
+    <Box
+      bg="#fff"
+      p={{ base: 3, lg: 5, xl: 6 }}
+      height="420px"
+      borderRadius="3xl"
+      w="full"
+    >
       <Flex alignItems="center" justifyContent="space-between">
         <Text>Enrolment Insight</Text>
 
@@ -72,8 +84,8 @@ const Enrollment = () => {
 
       <Flex alignItems="center" justifyContent="center" mt={8}>
         <DonutChart
-          width={400}
-          height={278}
+          width={480}
+          height={310}
           data={data}
           colors={colors}
           interactive={true}
