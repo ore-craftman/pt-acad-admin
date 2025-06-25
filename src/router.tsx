@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import BaseRoute from "./pages/BaseRoute";
+import Courses from "./pages/Courses";
 
 export const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ export const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/dashboard/courses",
+    element: <Courses />,
   },
   {
     path: "/*",

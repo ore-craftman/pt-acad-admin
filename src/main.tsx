@@ -10,6 +10,7 @@ const colors = {
     500: "#782DF3",
   },
   gold: "#FFC107",
+  green: "#01a78e",
 };
 
 const fonts = {

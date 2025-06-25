@@ -15,12 +15,12 @@ export const Sidebar = () => {
     {
       icon: <RxFileText fontSize={"16px"} />,
       title: "Courses",
-      route: "/courses",
+      route: "/dashboard/courses",
     },
     {
       icon: <CiCalendarDate fontSize={"18px"} />,
       title: "Events",
-      route: "/events",
+      route: "/dashboard/events",
     },
   ];
 
@@ -54,7 +54,8 @@ export const Sidebar = () => {
                   gap={4}
                   _hover={{ color: "primary.500" }}
                   color={
-                    item.route.includes(pathname.split("/")[1])
+                    item.route.includes(pathname.split("/")[2]) ||
+                    item.route === pathname
                       ? "primary.500"
                       : "gray.500"
                   }
